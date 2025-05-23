@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 98, 32);
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    border-radius: 8px;
+    margin: 16px;
+    background: #F8F9FA;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+    border: 1px solid rgb(24, 98, 32);
+}
+
+.container > h2 {
+    text-align: center;
+    color: rgb(24, 98, 32);
+}
+
+.container > form > .input {
+    margin: 8px 0;
+}
+
+.container > form > .input > label {
+    color: rgb(24, 98, 32);
+    font-weight: bold;
+}
+
+.container > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.container > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.container > form > .input_inline > label {
+    color: rgb(24, 98, 32);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.container > form > button {
+    background-color: rgb(24, 98, 32);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.searchBook {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.searchBook > label {
+    color: rgb(24, 98, 32);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.searchBook > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+div[data-testid="bookItem"]{
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+button[data-testid="bookItemIsCompleteButton"]{
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: darkgreen;
+    color: white;
+}
+
+button[data-testid="bookItemDeleteButton"]{
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: darkred;
+    color: white;
+}
