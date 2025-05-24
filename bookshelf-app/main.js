@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     submitForm.addEventListener('submit', function (event) {
         event.preventDefault();
         addBook();
+        event.target.reset()
     });
 
     const searchForm = document.getElementById('searchBook');
@@ -21,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
         loadDataFromStorage();
     }
 });
+
+
 
 function showSearchResult(searchInput) {
     const bookList = document.querySelectorAll('[data-testid="bookItem"]');
